@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+
+html, body{
+  padding:0;
+  margin: 0;
+  overflow-x:hidden;
+}
+
+@media only screen and (max-width: 600px) {
+.img-resize {
+    width:32%;
+    height:32%;
+    margin-right:10%;
+}
+div.mx-auto.order-0, li.nav-item.justify-content-center{
+  text-align: center;
+}
+.img-bg{
+  width:100%;
+  height:100%;
+}
+
+.centeredT{
+font-size: 3.3vh !important;
+}
+} 
+
+@media only screen and (min-width: 600px) {
+  .img-resize{
+    width:90%;
+    height:90%;
+}
+.img-bg{
+  width:100%;
+  height:100%;
+}
+} 
+
+@media only screen and (min-width: 992px) {
+  .img-resize {
+    width:100%;
+    height:100%;
+}
+.img-bg{
+  width:100%;
+  height:100%;
+}
+} 
+
+span.animation1 a, span.animation2 a{
+  color: inherit; 
+  text-decoration: inherit; 
+}
+
+span.animation1 a:hover {
+  color:white;
+}
+
+span.animation2 a:hover {
+  color: #D50000;
+}
+
+li.nav-item.justify-content-center:hover{
+  position: relative;
+  animation-name: move1;
+  animation-duration: 30s;
+}
+
+@keyframes move1{
+  0%   {left:0%; top: -7%;}
+  100%  {left:0%; top:0%;}
+}
+
+/* Entering Animation */
+
+#background1 {
+  position: fixed;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color:#A52A2A; 
+  z-index: -1;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  font-family: 'Ms Madi', cursive;
+  font-size:10.5vw;
+  color:#FFEAD0;
+}
+
+#background2 {
+  position: fixed;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  background-color: #FFEAD0; 
+  z-index: -1;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  font-family: 'Ms Madi', cursive;
+  font-size:10.5vw;
+  color:#A52A2A;
+}
+
+#move1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -50%);
+}
+
+#move2{
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(20%, -50%);
+}
+
+.animation1{
+  position: relative;
+  animation-name: in1;
+  animation-duration: 4s;
+  animation-fill-mode: forwards
+}
+
+@keyframes in1{
+  0%   {left:-25%; top:-10%;}
+  100%  {left:45%; top:46%;}
+}
+
+.animation2{
+  position: relative;
+  animation-name: in2;
+  animation-duration: 4s;
+  animation-fill-mode: forwards
+}
+
+@keyframes in2{
+  0%   {left:80%; top:150%;}
+  100%  {left:0%; top:48%;}
+}
+
+/* ANIMATION 1: */
+
+.square{
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  background-color: #FFEAD0; 
+  top: -10%;
+  width: 9.5vw;
+  height: 2vw;
+  position: absolute;
+}
+
+.sq1{
+  left : 0%;
+}
+
+.sq2{
+  left : 17%;
+}
+
+.sq3{
+  left : 33%;
+}
+
+.sq4{
+  left : 49%;
+}
+
+.sq5{
+  left : 65%;
+}
+
+.sq6{
+  left : 81%;
+}
+
+.square2{
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  background-color: #A52A2A; 
+  top: -10%;
+  width: 9.5vw;
+  height: 2vw;
+  position: absolute;
+}
+
+.sq7{
+  left : 81%;
+}
+
+.sq8{
+  left : 65%;
+}
+
+.sq9{
+  left : 49%;
+}
+
+.sq10{
+  left : 33%;
+}
+
+.sq11{
+  left : 17%;
+}
+
+.sq12{
+  left : 0%;
+}
+
+/* projects.html styles */
+
+.board{
+ padding:0 !important;
+ border-bottom: 4px solid #212529;
+ background-color: #BF3535;
+}
+
+div.col.board img:hover{
+  opacity: 0.4;
+  filter: blur(2px);
+}
+
+.containerT{
+  position: relative;
+  text-align: center;
+}
+
+.centeredT{
+  position: absolute;
+  top: 44%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility:hidden;
+}
+
+.containerT:hover .centeredT{
+  visibility:visible;
+  font-family: 'Ms Madi', cursive;
+  text-decoration: none;
+  color:#FFEFDC;
+  text-shadow: 2px 3px black, 0 0 20px black;
+  font-size: 4.5vw;
+}
+
+.bg{
+  background-color: #f2f3f8
+}
+
+.msMadi{
+  font-family: 'Ms Madi', cursive;
+  text-align: center;
+}
+
+.tittle{
+  color: black;
+  font-size: 4.7vh;
+  font-weight: 100;
+  text-align: center;
+  font-style: italic;
+  text-decoration: underline;
+  text-decoration-color:#A52A2A
+}
+
+.tittle2{
+ padding: 1vw;
+ text-align: center;
+ font-size: 2.3vh;
+ text-decoration: underline;
+ text-underline-offset: 0.8em;
+ line-height: 2.5em ;
+ text-decoration: underline;
+text-decoration-color:#A52A2A
+}
+
+.info{
+  text-align:justify;
+  padding-left: 1vw;
+  color: #575757;
+}
+
+.footer{
+ font-size:2vh;
+ color: black;
+ text-align: center;
+ position: relative;
+ left: 35%;
+ width:30%;
+ height:100%;
+}
+
+.bar{
+  position: relative;
+  padding: 10px 0px;
+  margin: 20px 0px;
+  border: 3px black;
+  background-color: #F7F7F6;
+  height: 5px;
+  width: 100%;
+  text-align: center;
+  border-radius: 0px;
+  margin-bottom: 0;
+ }
+
+ #barIcon{
+  left:0%;
+  top: 0%;
+  position: absolute;
+  border: 2px solid #A52A2A;
+  background-color: #A52A2A;
+  border-radius: 10px;
+  width: 5%;
+  height: 100%;
+ }
+
+#borders{
+  border-top: 4px solid #212529;
+}
+
+#button{
+  background-color: #A52A2A;
+}
+
+li{
+  text-align: center;
+}
+
+#coldecoration{
+  border: 2px solid #E5E5E5;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.col-md-6.c#coldecoration {
+  padding: 20px 0px 20px 23px;
+}
+
+#coldecoration:hover{
+  transform: translate(0,-6px);
+}
+
+.mapouter{
+  position: relative;
+  top:80%;
+}
+
+.byeText{
+  font-size:8.5vh;
+  font-weight: 300;
+}
+
+div.tittle + p{
+  text-align: center;
+}
+
+p  a{
+  text-decoration: none;
+  color:#212529;
+  padding-right: 1vw;
+  padding-left: 1vw;
+}
+
+p  a:hover{
+  color:#A52A2A
+}
+
+.mepic{
+  position: relative;
+  left:28%;
+  width:45%;
+  height:45%;
+  border-radius: 10px;
+  padding: 2vh;
+  border: 2px solid #A52A2A;
+  background-color: white;
+}
+
