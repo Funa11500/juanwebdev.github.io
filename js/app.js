@@ -37,7 +37,7 @@ bg1.addEventListener("click", ()=>{
         var a = document.createElement('a');
         title1.parentElement.appendChild(a);
         a.appendChild(title1);
-        a.href = "/projects.html#juanWebDev";
+        a.href = "/juanwebdev.github.io/projects.html#juanWebDev";
       }
     }, 1500);
 
@@ -80,7 +80,7 @@ bg1.addEventListener("click", ()=>{
           var a = document.createElement('a');
           title2.parentElement.appendChild(a);
           a.appendChild(title2);
-          a.href = "/projects.html";
+          a.href = "/juanwebdev.github.io/projects.html";
         }
       }, 1500);
   
