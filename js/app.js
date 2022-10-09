@@ -27,7 +27,7 @@ bg1.addEventListener("click", ()=>{
       height: "110%",
       easing: 'easeOutQuad',
       delay: anime.stagger(100),
-      duration: 750,
+      duration: 620,
       direction: 'alternate',
     })
 
@@ -45,7 +45,7 @@ bg1.addEventListener("click", ()=>{
       targets: squares1,
       height: "0%",
       easing: 'easeInOutQuad',
-      duration: 750,
+      duration: 620,
       delay: anime.stagger(100),
     })
 
@@ -70,7 +70,7 @@ bg1.addEventListener("click", ()=>{
         height: "110%",
         easing: 'easeOutQuad',
         delay: anime.stagger(100),
-        duration: 750,
+        duration: 620,
       })
   
   
@@ -88,7 +88,7 @@ bg1.addEventListener("click", ()=>{
         targets: squares2,
         height: "0%",
         easing: 'easeInOutQuad',
-        duration: 750,
+        duration: 620,
         delay: anime.stagger(100),
       })
 
