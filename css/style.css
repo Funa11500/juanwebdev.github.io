@@ -107,7 +107,7 @@ li.nav-item.justify-content-center:hover{
   position: absolute;
   top: 50%;
   left: 50%;
-
+  transform: translate(-40%, -50%);
 }
 
 #move2{
