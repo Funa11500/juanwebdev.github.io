@@ -39,7 +39,7 @@ bg1.addEventListener("click", ()=>{
         a.appendChild(title1);
         a.href = "/juanwebdev.github.io/projects.html#juanWebDev";
       }
-    }, 1500);
+    }, 1000);
 
     tl.add({
       targets: squares1,
@@ -82,7 +82,7 @@ bg1.addEventListener("click", ()=>{
           a.appendChild(title2);
           a.href = "/juanwebdev.github.io/projects.html";
         }
-      }, 1500);
+      }, 1000);
   
       tl.add({
         targets: squares2,
