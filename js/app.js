@@ -19,7 +19,7 @@ bg1.addEventListener("click", ()=>{
   if (flag1 == true){
 
   var tl = anime.timeline({
-    duration: 3000
+    duration: 2700
   });
   
     tl.add({
@@ -62,7 +62,7 @@ bg1.addEventListener("click", ()=>{
     if (flag2 == true){
 
     var tl = anime.timeline({
-      duration: 3000
+      duration: 2700
     });
     
       tl.add({
