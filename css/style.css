@@ -103,12 +103,7 @@ li.nav-item.justify-content-center:hover{
   color:#A52A2A;
 }
 
-#move1{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-40%, -50%);
-}
+
 
 #move2{
   position: absolute;
@@ -126,7 +121,7 @@ li.nav-item.justify-content-center:hover{
 
 @keyframes in1{
   0%   {left:-25%; top:-10%;}
-  100%  {left:45%; top:46%;}
+  100%  {left:10%; top:38%;}
 }
 
 .animation2{
