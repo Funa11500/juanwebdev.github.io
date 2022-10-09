@@ -19,7 +19,7 @@ bg1.addEventListener("click", ()=>{
   if (flag1 == true){
 
   var tl = anime.timeline({
-    duration: 5000
+    duration: 4000
   });
   
     tl.add({
@@ -27,7 +27,7 @@ bg1.addEventListener("click", ()=>{
       height: "110%",
       easing: 'easeOutQuad',
       delay: anime.stagger(100),
-      duration: 620,
+      duration: 500,
       direction: 'alternate',
     })
 
@@ -45,7 +45,7 @@ bg1.addEventListener("click", ()=>{
       targets: squares1,
       height: "0%",
       easing: 'easeInOutQuad',
-      duration: 620,
+      duration: 500,
       delay: anime.stagger(100),
     })
 
@@ -62,7 +62,7 @@ bg1.addEventListener("click", ()=>{
     if (flag2 == true){
 
     var tl = anime.timeline({
-      duration: 5000
+      duration: 4000
     });
     
       tl.add({
@@ -70,7 +70,7 @@ bg1.addEventListener("click", ()=>{
         height: "110%",
         easing: 'easeOutQuad',
         delay: anime.stagger(100),
-        duration: 620,
+        duration: 500,
       })
   
   
@@ -88,7 +88,7 @@ bg1.addEventListener("click", ()=>{
         targets: squares2,
         height: "0%",
         easing: 'easeInOutQuad',
-        duration: 620,
+        duration: 500,
         delay: anime.stagger(100),
       })
 
