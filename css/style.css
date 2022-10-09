@@ -138,7 +138,7 @@ li.nav-item.justify-content-center:hover{
 
 @keyframes in2{
   0%   {left:80%; top:150%;}
-  100%  {left:0%; top:46%;}
+  100%  {left:0%; top:47%;}
 }
 
 /* ANIMATION 1: */
@@ -338,11 +338,6 @@ li{
 
 #coldecoration:hover{
   transform: translate(0,-6px);
-}
-
-.mapouter{
-  position: relative;
-  top:80%;
 }
 
 .byeText{
