@@ -19,7 +19,7 @@ bg1.addEventListener("click", ()=>{
   if (flag1 == true){
 
   var tl = anime.timeline({
-    duration: 4000
+    duration: 3000
   });
   
     tl.add({
@@ -39,7 +39,7 @@ bg1.addEventListener("click", ()=>{
         a.appendChild(title1);
         a.href = "/juanwebdev.github.io/projects.html#juanWebDev";
       }
-    }, 1000);
+    }, 700);
 
     tl.add({
       targets: squares1,
@@ -62,7 +62,7 @@ bg1.addEventListener("click", ()=>{
     if (flag2 == true){
 
     var tl = anime.timeline({
-      duration: 4000
+      duration: 3000
     });
     
       tl.add({
@@ -82,7 +82,7 @@ bg1.addEventListener("click", ()=>{
           a.appendChild(title2);
           a.href = "/juanwebdev.github.io/projects.html";
         }
-      }, 1000);
+      }, 700);
   
       tl.add({
         targets: squares2,
