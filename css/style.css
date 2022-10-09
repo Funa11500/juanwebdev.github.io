@@ -54,11 +54,11 @@ span.animation1 a, span.animation2 a{
   text-decoration: inherit; 
 }
 
-span.animation1 a:hover {
+span.animation1:hover {
   color:white;
 }
 
-span.animation2 a:hover {
+span.animation2:hover {
   color: #D50000;
 }
 
