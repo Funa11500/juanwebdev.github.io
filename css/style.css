@@ -276,8 +276,9 @@ text-decoration-color:#A52A2A
 
 .info{
   text-align:justify;
-  padding-left: 1vw;
   color: #575757;
+  padding-left: 5%;
+  padding-top: 5%;
 }
 
 .footer{
