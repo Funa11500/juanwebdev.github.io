@@ -119,14 +119,26 @@ li.nav-item.justify-content-center:hover{
 
 .animation1{
   position: relative;
-  left: 45%;
-  top: 46%;
+  animation-name: in1;
+  animation-duration: 4s;
+  animation-fill-mode: forwards
+}
+
+@keyframes in1{
+  0%   {left:-25%; top:-10%;}
+  100%  {left:45%; top:46%;}
 }
 
 .animation2{
   position: relative;
-  left: 0%;
-  top: 46%;
+  animation-name: in2;
+  animation-duration: 4s;
+  animation-fill-mode: forwards
+}
+
+@keyframes in2{
+  0%   {left:80%; top:150%;}
+  100%  {left:0%; top:48%;}
 }
 
 /* ANIMATION 1: */
