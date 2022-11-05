@@ -118,7 +118,7 @@ li.nav-item.justify-content-center:hover{
 }
 
 .animation1{
-  position: absolute;
+  position: relative;
   animation-name: in1;
   animation-duration: 4s;
   animation-fill-mode: forwards
@@ -126,7 +126,7 @@ li.nav-item.justify-content-center:hover{
 
 @keyframes in1{
   0%   {left:-25%; top:-10%;}
-  100%  {left:45%; top:44%;}
+  100%  {left:45%; top:46%;}
 }
 
 .animation2{
@@ -138,7 +138,7 @@ li.nav-item.justify-content-center:hover{
 
 @keyframes in2{
   0%   {left:80%; top:150%;}
-  100%  {left:0%; top:51%;}
+  100%  {left:0%; top:48%;}
 }
 
 /* ANIMATION 1: */
