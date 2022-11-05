@@ -118,7 +118,7 @@ li.nav-item.justify-content-center:hover{
 }
 
 .animation1{
-  position: relative;
+  position: absolute;
   /*animation-name: in1;
   animation-duration: 4s;
   animation-fill-mode: forwards
