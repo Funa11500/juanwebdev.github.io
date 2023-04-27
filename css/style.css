@@ -19,7 +19,7 @@ div.mx-auto.order-0, li.nav-item.justify-content-center{
   width:100%;
   height:100%;
 }
-  .col-md-6.c.d#coldecoration {
+.col-md-6.c.d#coldecoration {
   padding: 4px 8px 4px 8px;
 }
 .centeredT{
@@ -49,38 +49,29 @@ font-size: 3.3vh !important;
 }
 } 
 
-span.animation1 a, span.animation2 a{
-  color: inherit; 
-  text-decoration: inherit; 
-}
+/*index.html*/
 
-span.animation1:hover {
+.title1:hover {
   color:white;
 }
 
-span.animation2:hover {
+.title2:hover {
   color: #D50000;
 }
 
-li.nav-item.justify-content-center:hover{
-  position: relative;
-  animation-name: move1;
-  animation-duration: 30s;
+.title1, .title2{
+  margin-bottom: 1em;
 }
 
-@keyframes move1{
-  0%   {left:0%; top: -7%;}
-  100%  {left:0%; top:0%;}
+.title1{
+  margin-right: 0.2em;
 }
-
-/* Entering Animation */
 
 #background1 {
   position: fixed;
   left: 0;
   width: 50%;
-  top:-10%;
-  height: 145%;
+  height: 100%;
   background-color:#A52A2A; 
   z-index: -1;
   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
@@ -93,8 +84,7 @@ li.nav-item.justify-content-center:hover{
   position: fixed;
   left: 50%;
   width: 50%;
-  top:-10%;
-  height: 145%;
+  height: 100%;
   background-color: #FFEAD0; 
   z-index: -1;
   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
@@ -103,113 +93,14 @@ li.nav-item.justify-content-center:hover{
   color:#A52A2A;
 }
 
-#move1{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-40%, -50%);
+#background1, #background2{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#move2{
-  position: absolute;
-  top: 50%;
-  left: 0%;
-  transform: translate(20%, -50%);
-}
-
-.animation1{
-  position: relative;
-  animation-name: in1;
-  animation-duration: 4s;
-  animation-fill-mode: forwards
-}
-
-@keyframes in1{
-  0%   {left:-25%; top:-10%;}
-  100%  {left:45%; top:46%;}
-}
-
-.animation2{
-  position: relative;
-  animation-name: in2;
-  animation-duration: 4s;
-  animation-fill-mode: forwards
-}
-
-@keyframes in2{
-  0%   {left:80%; top:150%;}
-  100%  {left:0%; top:48%;}
-}
-
-/* ANIMATION 1: */
-
-.square{
-  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-  background-color: #FFEAD0; 
-  top: -10%;
-  width: 9.5vw;
-  height: 2vw;
-  position: absolute;
-}
-
-.sq1{
-  left : 0%;
-}
-
-.sq2{
-  left : 17%;
-}
-
-.sq3{
-  left : 33%;
-}
-
-.sq4{
-  left : 49%;
-}
-
-.sq5{
-  left : 65%;
-}
-
-.sq6{
-  left : 81%;
-}
-
-.square2{
-  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-  background-color: #A52A2A; 
-  top: -10%;
-  width: 9.5vw;
-  height: 2vw;
-  position: absolute;
-}
-
-.sq7{
-  left : 81%;
-}
-
-.sq8{
-  left : 65%;
-}
-
-.sq9{
-  left : 49%;
-}
-
-.sq10{
-  left : 33%;
-}
-
-.sq11{
-  left : 17%;
-}
-
-.sq12{
-  left : 0%;
-}
-
-/* projects.html styles */
+/* projects.html */
 
 .board{
  padding:0 !important;
@@ -334,10 +225,6 @@ li{
 
 .col-md-6.c#coldecoration {
   padding: 20px 0px 20px 23px;
-}
-
-#coldecoration:hover{
-  transform: translate(0,-6px);
 }
 
 .byeText{
