@@ -51,6 +51,10 @@ font-size: 3.3vh !important;
 
 /*index.html*/
 
+#background1 a, #background2 a{
+  text-decoration: none;
+}
+
 .title1:hover {
   color:white;
 }
@@ -65,6 +69,12 @@ font-size: 3.3vh !important;
 
 .title1{
   margin-right: 0.2em;
+  color:#FFEAD0;
+}
+
+.title2{
+  margin-right: 0.2em;
+  color:#A52A2A;
 }
 
 #background1 {
@@ -77,7 +87,6 @@ font-size: 3.3vh !important;
   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
   font-family: 'Ms Madi', cursive;
   font-size:10.5vw;
-  color:#FFEAD0;
 }
 
 #background2 {
@@ -90,7 +99,6 @@ font-size: 3.3vh !important;
   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
   font-family: 'Ms Madi', cursive;
   font-size:10.5vw;
-  color:#A52A2A;
 }
 
 #background1, #background2{
@@ -194,7 +202,7 @@ text-decoration-color:#A52A2A
   margin-bottom: 0;
  }
 
- #barIcon{
+ #barGrow{
   left:0%;
   top: 0%;
   position: absolute;
@@ -257,4 +265,128 @@ p  a:hover{
   border: 2px solid #A52A2A;
   background-color: white;
 }
+
+/* Animation for loading bar */
+
+.bar::before{
+  position: absolute;
+  content: "Creating Content!";
+  animation: changeText 17s linear infinite;
+  top: -30px; 
+  left: -18.7%;
+  width: 140%;
+  text-align: center;
+ }
+
+ .bar::after{
+  position: absolute;
+  content: "0%";
+  animation: changeText2 17s linear infinite;
+  top: 20px;
+  left: 0%;
+  width: 100%;
+  text-align: center;
+ }
+
+ #barGrow{
+  animation: grow 17s ease-in-out infinite;
+ }
+
+
+ @keyframes grow{
+  0%{
+    width: 5%;
+  }
+  10%{
+    width: 20%;
+  }
+  25%{
+    width: 35%;
+  }
+  35%{
+    width: 25%;
+  }
+  45%{
+    width: 45%;
+  }
+  55%{
+    width: 55%;
+  }
+  65%{
+    width: 40%;
+  }
+  75%{
+    width: 65%;
+  }
+  80%{
+    width: 75%;
+  }
+  95%{
+    width: 100%;
+  }
+  100%{
+    width: 100%;
+  }
+ }
+
+ @keyframes changeText{
+
+  25%{
+    content: "Finding Tools...";
+  }
+  40%{
+    content: "Brainstorming...";
+  }
+  50%{
+    content: "Creating...";
+  }
+  60%{
+    content: "Last Details...";
+  }
+  70%{
+    content: "Almost Done!";
+  }
+  85%{
+    content: "Thanks for visiting!";
+  }
+  100%{
+    content: "Thanks for visiting!";
+  }
+ }
+
+ @keyframes changeText2{
+  0%{
+    content: "0%";
+  }
+  10%{
+    content: "20%";
+  }
+  25%{
+    content: "35%";
+  }
+  35%{
+    content: "25%";
+  }
+  45%{
+    content: "45%";
+  }
+  55%{
+    content: "55%";
+  }
+  65%{
+    content: "40%";
+  }
+  75%{
+    content: "65%";
+  }
+  80%{
+    content: "75%";
+  }
+  95%{
+    content: "100%";
+  }
+  100%{
+    content: "100%";
+  }
+ }
 
