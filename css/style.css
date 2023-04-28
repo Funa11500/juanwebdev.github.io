@@ -20,7 +20,7 @@ div.mx-auto.order-0, li.nav-item.justify-content-center{
   height:100%;
 }
 .col-md-6.c.d#coldecoration {
-  padding: 4px 8px 4px 8px;
+  padding: 2em 0.5em 2.1em 2em
 }
 .centeredT{
 font-size: 3.3vh !important;
@@ -49,6 +49,9 @@ font-size: 3.3vh !important;
 }
 } 
 
+
+
+
 /*index.html*/
 
 #background1 a, #background2 a{
@@ -68,7 +71,7 @@ font-size: 3.3vh !important;
 }
 
 .title1{
-  margin-right: 0.2em;
+  margin-right: 0.18em;
   color:#FFEAD0;
 }
 
@@ -108,6 +111,11 @@ font-size: 3.3vh !important;
   align-items: center;
 }
 
+@media only screen and (max-width: 768px) {
+  .title1, .title2{
+    margin-bottom: 2.6em;
+  }
+}
 /* projects.html */
 
 .board{
@@ -186,7 +194,6 @@ text-decoration-color:#A52A2A
  position: relative;
  left: 35%;
  width:30%;
- height:100%;
 }
 
 .bar{
@@ -214,7 +221,8 @@ text-decoration-color:#A52A2A
  }
 
 #borders{
-  border-top: 4px solid #212529;
+  border-top: 1.7px solid #ccc;
+  padding-top: 1.6em;
 }
 
 #button1{
@@ -227,8 +235,12 @@ li{
 
 #coldecoration{
   border: 2px solid #E5E5E5;
-  border-radius: 10px;
   background-color: white;
+  padding: 1.4em
+}
+
+.space{
+  margin: 1.5em 0 1.7em 0;
 }
 
 .col-md-6.c#coldecoration {
@@ -236,9 +248,17 @@ li{
 }
 
 .byeText{
+  margin: 0.4em 0 0 0;
   font-size:8.5vh;
   font-weight: 300;
 }
+
+.byeText2{
+  margin: 1em 0;
+  font-size:8.5vh;
+  font-weight: 300;
+}
+
 
 div.tittle + p{
   text-align: center;
@@ -264,6 +284,18 @@ p  a:hover{
   padding: 2vh;
   border: 2px solid #A52A2A;
   background-color: white;
+}
+
+.footNav{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0;
+  gap: 10px;
+}
+
+.footNav li{
+  list-style-type: none;
 }
 
 /* Animation for loading bar */
