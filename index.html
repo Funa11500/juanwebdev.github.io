@@ -14,23 +14,23 @@
 </head>
 <body>
     <header> 
-        <nav class="sticky-top navbar navbar-expand-sm navbar-dark bg-dark">
+        <nav id="home" class="sticky-top navbar navbar-expand-sm navbar-dark bg-dark">
             <div class="container-fluid">
                 <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item active justify-content-center">
-                            <a class="nav-link active" href="/juanwebdev.github.io">Home</a>
+                            <a class="nav-link active" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item justify-content-center"> 
+                            <a class="nav-link" href="#prj">Projects</a>
                         </li>
                         <li class="nav-item justify-content-center">
-                            <a class="nav-link" href="/juanwebdev.github.io/projects.html">Projects</a>
-                        </li>
-                        <li class="nav-item justify-content-center">
-                            <a class="nav-link" href="/juanwebdev.github.io/projects.html#juanWebDev">About</a>
+                            <a class="nav-link" href="#juanWebDev">About</a>
                         </li>
                     </ul>
                 </div>
                 <div class="mx-auto order-0">
-                    <a class="mx-auto" href="/juanwebdev.github.io"><img class="img-resize" src="assets/logo2.jpeg" alt="Logo JFH"></a>
+                    <a class="mx-auto" href="#home"><img class="img-resize" src="assets/logo2.jpeg" alt="Logo JFH"></a>
                     <button class="navbar-toggler justify-content-center" type="button" data-bs-toggle="collapse" data-bs-target=".dual-collapse2" title="Navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -38,7 +38,7 @@
                 <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item justify-content-center">
-                            <a class="nav-link" href="/juanwebdev.github.io/projects.html#contactMe">Contact Me</a>
+                            <a class="nav-link" href="#contactMe">Contact Me</a>
                         </li> 
                     </ul>
                 </div>
@@ -47,16 +47,164 @@
     </header> 
     <main>
         <div>
+
+                <div class="hero">
                 <div id="background1">
-                    <a class="title1" href="/juanwebdev.github.io/projects.html">
-                    Juan
-                    </a>
+                    <h1 class="title1">Juan Web Developer</h1>
+                    <h2 class="title2">Code is my paint, the web is my canvas</h2>
+                    <small class="title3">- Juan Higuera Estupiñan</small>
+                    <div class="arrow-down" id="juanWebDev"></div>
                 </div>
-                <div id="background2">
-                    <a  class="title2"href="/juanwebdev.github.io/projects.html">
-                    Web Developer
-                    </a>
                 </div>
+
+                
+            
+                    <div class="container-fluid bg">
+                            <div class="space row align-items-center">
+        
+                                <div class="col-sm"></div>
+        
+                                    <div class="col-md-7 c d overlay" id="coldecoration">
+                                        <div class="row">
+                                            <div>
+                                            <div class="col">
+                                                        <div class="tittle">About Me</div>
+                                                <hr>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4 tittle2 align-self-center">Who am I?</div>
+        
+                                                <div class="col-md-8 info align-items-center">
+        
+                                                    <p>Hi there! I'm a Front-End Developer based in Colombia, passionate about crafting engaging and innovative web experiences. With a focus on responsive design and dynamic user interfaces, I specialize in creating visually stunning websites that leave a lasting impression on users.</p>
+        
+                                                    <p>As a detail-oriented developer, I pride myself on delivering elegant and functional solutions. Whether you're looking to enhance your website's performance or build a new one from scratch, I'm committed to bringing your ideas to life with engaging and innovative solutions.</p>
+                                
+                                                <br><br><a href="#contactMe" class="btn btn-dark" id="button1">Lets work Together!</a><br><br>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                        </div>
+                                        <div class="row align-items-center rmPad">
+                                            <div class="col-md-6">
+                                                <div class="tittle2">I have recently worked with:</div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item">React.js - Next.js
+                                                    </li>
+                                                    <li class="list-group-item">JavaScript -TypeScript</li>
+                                                    <li class="list-group-item">CSS - SCSS</li>
+                                                    <li class="list-group-item">Bootstrap - Tailwind</li>
+                                                    <li class="list-group-item">Node.js</li>
+                                                    <li class="list-group-item">WordPress</li>
+                                                    <li class="list-group-item">Python/Java/Linux/SQL....</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <hr>
+                                    <div class="distribute">
+                                            <br>
+                                            <img class="mepic" src="assets/mepic.jpeg" alt="Picture of Juan Higuera">
+                                            <p class="msMadi byeText">Yup this is Me!</p>
+                                            <div class="tittle">Download my Resume:</div>
+                                            <p>
+                                                <a href="path_to_file" download="proposed_file_name">Resume</a><br>
+                                                My Information:<br>
+                                                Juan Fernando Higuera Estupiñan<br>
+                                                juanhiguera204@gmail.com<br>
+                                            </p>
+                                    </div>
+                                </div>
+        
+                                <div class="col-sm"></div>
+        
+                            </div>
+                        </div>
+        
+                        <div class="container-fluid board edit" id="prj">
+                            <h3 class="tittle">Projects</h3>
+                            <div class="row">
+                                <div class="col board containerT">
+                                    <a href="#">
+                                        <img class="img-bg" src="assets/coffee_shop.jpg" alt="Coffee Website">
+                                        <div class="centeredT">Coffee Shop</div>
+                                    </a>
+                                </div>
+                                <div class="col board containerT">
+                                    <a href="https://clothes-shop-project.vercel.app/">
+                                        <img class="img-bg" src="assets/clothes.jpg" alt="E-commerce Website">
+                                        <div class="centeredT">Clothes Shop</div>
+                                    </a>
+                                </div>
+                                <div class="col board containerT">
+                                    <a href="#">
+                                        <img class="img-bg" src="assets/camera.jpg" alt="Photography Website">
+                                        <div class="centeredT">Photography</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="container-fluid">
+                            <div class="space row align-items-center">
+                                <div class="col-sm">
+                                </div>
+                                <div class="col-md-4" id="coldecoration">
+                                    <span class="tittle" id="contactMe">Contact</span>
+                                    <br>
+                                    <br>
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="formGroupExampleInput">Name</label>
+                                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name">
+                                        </div>
+                                        <div class="form-group">
+                                          <label for="exampleInputEmail1">Email address</label>
+                                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleFormControlTextarea1">Leave me a Message!</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="..."></textarea>
+                                        </div>
+                                        <br>
+                                        <button type="submit" class="btn btn-dark" id="button1">Submit</button>
+                                        <br>
+                                        <br>
+                                    </form>
+                                </div>
+                                <div class="col-sm">
+                                </div>
+                            </div>
+                        </div>
+        
+                    
+        
+        
+                    <div id="borders">
+                            <p class="tittle">More Content Coming Soon!</p>
+                            <p class=" msMadi byeText2">Take Care! ♛</p>
+                            
+                        <div class="footer">
+        
+                            <div class="bar">
+                            <div id="barGrow"></div>
+                            </div>
+                                
+        
+                            <div>
+                                <ul class="footNav"> 
+                                    <li><p><a href="#home">Home</a></li>
+                                    <li><p><a href="#prj">Projects</a></p></li>
+                                    <li><p><a href="#juanWebDev">About</a></p></li>
+                                </ul>
+                            </div>
+        
+                        </div>
+                    </div>
+            
         </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>

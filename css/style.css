@@ -19,9 +19,6 @@ div.mx-auto.order-0, li.nav-item.justify-content-center{
   width:100%;
   height:100%;
 }
-.col-md-6.c.d#coldecoration {
-  padding: 2em 0.5em 2.1em 2em
-}
 .centeredT{
 font-size: 3.3vh !important;
 }
@@ -49,8 +46,14 @@ font-size: 3.3vh !important;
 }
 } 
 
+.col-md-6.c.d#coldecoration {
+  padding: 2em 2em 2.1em 2em;
+}
 
-
+.rmPad{
+  padding: 0;
+  margin: auto;
+}
 
 /*index.html*/
 
@@ -58,70 +61,89 @@ font-size: 3.3vh !important;
   text-decoration: none;
 }
 
-.title1:hover {
-  color:white;
-}
-
-.title2:hover {
-  color: #D50000;
-}
-
-.title1, .title2{
-  margin-bottom: 1em;
-}
-
 .title1{
-  margin-right: 0.18em;
-  color:#FFEAD0;
+  /* margin-bottom: 1em; */
+  color: white;
+  font-size: 5.25rem;
+  text-shadow: 2px 2px 4px pink;
 }
 
 .title2{
-  margin-right: 0.2em;
-  color:#A52A2A;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+}
+
+.title3{
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 2em;
+}
+
+.arrow-down {
+  position: relative;
+  width: 0; 
+  height: 0; 
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 25px solid black;
+  animation: go-down 1.5s ease infinite;
+}
+
+@keyframes go-down{
+  0%{
+    top:0px;
+  }
+  50%{
+    top:7px;
+  }
+  100%{
+    top:0px;
+  }
+}
+
+.hero{
+  display: flex;
+  flex-direction: column;
 }
 
 #background1 {
-  position: fixed;
   left: 0;
-  width: 50%;
-  height: 100%;
-  background-color:#A52A2A; 
+  width: 100%;
+  height: 87vh;
   z-index: -1;
-  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
   font-family: 'Ms Madi', cursive;
-  font-size:10.5vw;
-}
-
-#background2 {
-  position: fixed;
-  left: 50%;
-  width: 50%;
-  height: 100%;
-  background-color: #FFEAD0; 
-  z-index: -1;
-  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-  font-family: 'Ms Madi', cursive;
-  font-size:10.5vw;
-}
-
-#background1, #background2{
+  background: radial-gradient(50% 123.47% at 50% 50%, #a52a2a 0%, #000438 100%), linear-gradient(121.28deg, #669600 0%, #FF0000 100%), linear-gradient(360deg, #0029FF 0%, #8FFF00 100%), radial-gradient(100% 164.72% at 100% 100%, #380093 0%, #00FF57 100%), radial-gradient(100% 148.07% at 0% 0%, #ffead0 0%, #51D500 100%);
+  background-blend-mode: screen, color-dodge, overlay, difference, normal;
   text-align: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+
+
+
 @media only screen and (max-width: 768px) {
-  .title1, .title2{
-    margin-bottom: 2.6em;
+  .board{
+    max-width: 100% !important;
+   }
+   .col-md-7.c.d#coldecoration{
+    border-bottom: 1.5px solid #ccc;
+  }
+  #background1{
+    padding-bottom: 8em;
   }
 }
+
 /* projects.html */
+
+
 
 .board{
  padding:0 !important;
- border-bottom: 4px solid #212529;
- background-color: #BF3535;
+ max-width: 60%;
+ margin-top: 2em;
 }
 
 div.col.board img:hover{
@@ -132,6 +154,9 @@ div.col.board img:hover{
 .containerT{
   position: relative;
   text-align: center;
+  background-color: #BF3535;
+  border-top: 3px solid #212529;
+  border-bottom: 3px solid #212529;
 }
 
 .centeredT{
@@ -148,16 +173,20 @@ div.col.board img:hover{
   text-decoration: none;
   color:#FFEFDC;
   text-shadow: 2px 3px black, 0 0 20px black;
-  font-size: 4.5vw;
+  font-size: 2.5rem
 }
 
 .bg{
-  background-color: #f2f3f8
+  background-color: #f2f3f8;
 }
 
 .msMadi{
   font-family: 'Ms Madi', cursive;
   text-align: center;
+}
+
+#borders .tittle{
+  font-size: 2rem;
 }
 
 .tittle{
@@ -188,10 +217,13 @@ text-decoration-color:#A52A2A
 }
 
 .footer{
- font-size:2vh;
+ font-size:1rem;
  color: black;
  text-align: center;
  position: relative;
+ display: flex;
+ flex-direction: column;
+ gap: 36px;
  left: 35%;
  width:30%;
 }
@@ -221,8 +253,8 @@ text-decoration-color:#A52A2A
  }
 
 #borders{
-  border-top: 1.7px solid #ccc;
-  padding-top: 1.6em;
+  border-top: 1.5px solid #ccc;
+  padding: 1.6em 1em 0 1em;
 }
 
 #button1{
@@ -233,14 +265,23 @@ li{
   text-align: center;
 }
 
+.borderTop{
+  border-top: 2px solid #E5E5E5;
+}
+
 #coldecoration{
-  border: 2px solid #E5E5E5;
   background-color: white;
   padding: 1.4em
 }
 
+.overlay{
+  position: relative;
+  top: -152px;
+  border-radius: 10px;
+}
+
 .space{
-  margin: 1.5em 0 1.7em 0;
+  padding:0;
 }
 
 .col-md-6.c#coldecoration {
@@ -249,13 +290,12 @@ li{
 
 .byeText{
   margin: 0.4em 0 0 0;
-  font-size:8.5vh;
+  font-size:7vh;
   font-weight: 300;
 }
 
 .byeText2{
-  margin: 1em 0;
-  font-size:8.5vh;
+  font-size:4vh;
   font-weight: 300;
 }
 
@@ -275,15 +315,32 @@ p  a:hover{
   color:#A52A2A
 }
 
+.distribute{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2.3em;
+}
+
 .mepic{
-  position: relative;
-  left:28%;
-  width:45%;
-  height:45%;
+  margin: auto;
+  max-width: 50%;
   border-radius: 10px;
-  padding: 2vh;
-  border: 2px solid #A52A2A;
+  border: 1px solid #A52A2A;
   background-color: white;
+}
+
+@media only screen and (min-width: 700px) {
+  .mepic {
+    max-width: 28%;
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+  .space{
+    padding: 3em 0 3em 0 !important;
+  }
 }
 
 .footNav{
